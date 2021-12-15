@@ -2,10 +2,13 @@ package com.thiago.spring.Spring.Vendas.rest.Controller;
 
 import com.thiago.spring.Spring.Vendas.domain.entity.Cliente;
 import com.thiago.spring.Spring.Vendas.domain.repository.ClientesRepository;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -48,4 +51,32 @@ public class ClienteController {
         }
         return ResponseEntity.notFound().build();
     }
+
+    @PutMapping("/api/cliente/{id}")
+    @ResponseBody
+    public ResponseEntity update (@PathVariable Integer id,
+                                  @RequestBody Cliente cliente){
+        return clientesRepository
+        .findById(id)
+        .map(clienteExistente -> {
+            cliente.setId(clienteExistente.getId());
+            clientesRepository.save(cliente);
+            return ResponseEntity.noContent().build();
+        }).orElseGet( () -> ResponseEntity.notFound().build());
+
+    }
+
+    @GetMapping("/api/cliente")
+    public ResponseEntity fitro (Cliente fitro){
+        ExampleMatcher matcher= ExampleMatcher
+                .matching()
+                .withIgnoreCase()
+                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING);
+
+        Example example = Example.of(fitro,matcher);
+        List<Cliente> lista = clientesRepository.findAll(example);
+        return ResponseEntity.ok(lista);
+
+    }
+
 }
