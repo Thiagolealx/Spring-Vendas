@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="995baff0-e36d-4215-9b0a-82ef2a178c6b" name="Default Changelist" comment=" Trabalhando com o modelo DTO">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/rest/ApiErros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/rest/controller/ApplicationControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/rest/dto/InformacoesItemPedidoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/rest/dto/InformacoesPedidoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repository/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repository/Pedidos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/rest/controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/PedidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/impl/PedidoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

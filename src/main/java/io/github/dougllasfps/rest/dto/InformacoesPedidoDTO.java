@@ -1,9 +1,6 @@
 package io.github.dougllasfps.rest.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -18,5 +15,6 @@ public class InformacoesPedidoDTO {
     private String nomeCliente;
     private BigDecimal total;
     private String dataPedido;
-    private List<InformacoesItemPedidoDTO> items;
+    private String status;
+    private List<InformacaoItemPedidoDTO> items;
 }
